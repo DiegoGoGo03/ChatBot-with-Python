@@ -1,0 +1,42 @@
+# --- Archivos de entorno y configuración ---
+.env
+*.env
+
+# --- Carpetas de entorno virtual ---
+venv/
+ENV/
+env/
+.venv/
+
+# --- Archivos de compilación Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+
+# --- Archivos de logs ---
+*.log
+*.out
+*.err
+
+# --- Archivos temporales ---
+*.tmp
+*.swp
+*.bak
+*.DS_Store
+Thumbs.db
+
+# --- Archivos de Jupyter ---
+.ipynb_checkpoints/
+
+# --- Archivos de IDEs ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Archivos de distribución ---
+build/
+dist/
+*.egg-info/
