@@ -14,11 +14,37 @@ st.set_page_config(page_title="ChatBot con Python", page_icon="🤖", layout="ce
 
 st.markdown(
     """
-    <div style='display: flex; justify-content: space-between; align-items: center;'>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #414141;
+        }
+        .navbar h2 {
+            color: white;
+            margin: 0;
+        }
+        .nav-button {
+            text-decoration: none !important;
+            background-color: #4CAF50;
+            color: white !important;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .nav-button:hover {
+            transform: scale(1.1);
+            background-color: #3edf45;
+        }
+    </style>
+
+    <div class="navbar">
         <h2>🤖 ChatBot con Python y Gemini</h2>
-        <a href="https://diego-felipe-gomez.netlify.app/" target="_blank" 
-           style="text-decoration: none; background-color: #4CAF50; color: white; 
-                  padding: 8px 16px; border-radius: 8px; font-weight: bold;">
+        <a href="https://diego-felipe-gomez.netlify.app/" target="_blank" class="nav-button">
             &lt;KRESTO_DEV&gt;
         </a>
     </div>
@@ -26,6 +52,8 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+
 
 # ----- HISTORIAL -----
 if "messages" not in st.session_state:
